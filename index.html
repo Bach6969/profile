@@ -1,0 +1,260 @@
+<link rel="stylesheet" href="style.css">
+
+<div id="wicked">
+    <div class="container">
+      
+        <div class="top-tabs">
+                <button class="tab-link" onclick="openTab(event, 'Character1')">Character Info</button>
+                <button class="tab-link" onclick="openTab(event, 'Character2')">Skills</button>
+                <button class="tab-link" onclick="openTab(event, 'Character3')">Freeform</button>
+        </div>
+    
+       
+        <div class="header">
+            <div class="imagery">Imagery</div>
+            <div class="name">
+                <h1>Character Name Here</h1>
+                <h2>"Character Alias"</h2>
+            </div>
+            <div class="imagery">Imagery</div>
+        </div>
+    
+      <div class="tab-content" id="Character1">
+        <div class="content">
+            
+            <div class="photo">Character Photo</div>
+    
+     
+            <div class="details">
+                <div class="info">
+                    Face Claim:<br>
+                    Possession:<br>
+                    Character Age:<br>
+                    Gender: Gender, Pronouns<br>
+                    Sexuality:<br>
+                    Relationship Status:<br>
+                    <br>
+                    For super basic character info that every char most likely has.
+                    <br><br>
+                    This section should stop after “Organization” on the notes.
+                </div>
+            </div>
+        </div></div>
+        
+         <div class="tab-content" id="Character2">
+        <div class="class-section">
+                <div class="class-box">
+                    <h3>Class</h3>
+                    <p>###</p>
+                </div>
+            </div>
+            
+         <div class="header-section">
+                <div>
+                    <h3>Mana</h3>
+                    <p>###</p>
+                </div>
+                <div>
+                    <h3>Endurance</h3>
+                    <p>###</p>
+                </div>
+                <div>
+                    <h3>Health</h3>
+                    <p>###</p>
+                </div>
+         
+            </div>
+         <div class="flex">
+         <div class="section">
+                <h3>Mental Attributes (# Total)</h3>
+                <div class="attribute">
+                    Intl: <input type="number" class="percentage-input" id="intelligence" min="0" max="100" placeholder="%" oninput="updateBar(this)" />%
+                    <div class="bar-container"><div class="bar-fill"></div></div>
+                </div>
+                <div class="attribute">
+                    Wits: <input type="number" class="percentage-input" id="wits" min="0" max="100" placeholder="%" oninput="updateBar(this)" />%
+                    <div class="bar-container"><div class="bar-fill"></div></div>
+                </div>
+                <div class="attribute">
+                    Res: <input type="number" class="percentage-input" id="resolve" min="0" max="100" placeholder="%" oninput="updateBar(this)" />%
+                    <div class="bar-container"><div class="bar-fill"></div></div>
+                </div>
+            </div>
+    
+         
+            <div class="section">
+                <h3>Physical Attributes (# Total)</h3>
+                <div class="attribute">
+                    Str: <input type="number" class="percentage-input" id="strength" min="0" max="100" placeholder="%" oninput="updateBar(this)" />%
+                    <div class="bar-container"><div class="bar-fill"></div></div>
+                </div>
+                <div class="attribute">
+                    Dex: <input type="number" class="percentage-input" id="dexterity" min="0" max="100" placeholder="%" oninput="updateBar(this)" />%
+                    <div class="bar-container"><div class="bar-fill"></div></div>
+                </div>
+                <div class="attribute">
+                    Sta: <input type="number" class="percentage-input" id="stamina" min="0" max="100" placeholder="%" oninput="updateBar(this)" />%
+                    <div class="bar-container"><div class="bar-fill"></div></div>
+                </div>
+            </div>
+            
+            
+            </div> 
+            
+                 <div class="flex">
+         <div class="section">
+                <h3>Social Attributes (# Total)</h3>
+                <div class="attribute">
+                    Pres: <input type="number" class="percentage-input" id="strength" min="0" max="100" placeholder="%" oninput="updateBar(this)" />%
+                    <div class="bar-container"><div class="bar-fill"></div></div>
+                </div>
+                <div class="attribute">
+                    Manip: <input type="number" class="percentage-input" id="dexterity" min="0" max="100" placeholder="%" oninput="updateBar(this)" />%
+                    <div class="bar-container"><div class="bar-fill"></div></div>
+                </div>
+                <div class="attribute">
+                    Compos: <input type="number" class="percentage-input" id="stamina" min="0" max="100" placeholder="%" oninput="updateBar(this)" />%
+                    <div class="bar-container"><div class="bar-fill"></div></div>
+                </div>
+            </div>
+    
+         
+            <div class="section">
+                <h3>Mental Skills</h3>
+                <div class="attribute">
+                    Academics: <input type="number" class="percentage-input" id="intelligence" min="0" max="100" placeholder="%" oninput="updateBar(this)" />%
+                    <div class="bar-container"><div class="bar-fill"></div></div>
+                </div>
+                <div class="attribute">
+                    Enchanting: <input type="number" class="percentage-input" id="wits" min="0" max="100" placeholder="%" oninput="updateBar(this)" />%
+                    <div class="bar-container"><div class="bar-fill"></div></div>
+                </div>
+                <div class="attribute">
+                    Crafts: <input type="number" class="percentage-input" id="resolve" min="0" max="100" placeholder="%" oninput="updateBar(this)" />%
+                    <div class="bar-container"><div class="bar-fill"></div></div>
+                </div>
+                <div class="attribute">
+                    Investigation: <input type="number" class="percentage-input" id="intelligence" min="0" max="100" placeholder="%" oninput="updateBar(this)" />%
+                    <div class="bar-container"><div class="bar-fill"></div></div>
+                </div>
+                <div class="attribute">
+                    Medicine: <input type="number" class="percentage-input" id="wits" min="0" max="100" placeholder="%" oninput="updateBar(this)" />%
+                    <div class="bar-container"><div class="bar-fill"></div></div>
+                </div>
+                <div class="attribute">
+                    Alchemy: <input type="number" class="percentage-input" id="resolve" min="0" max="100" placeholder="%" oninput="updateBar(this)" />%
+                    <div class="bar-container"><div class="bar-fill"></div></div>
+                </div>
+                <div class="attribute">
+                    Science: <input type="number" class="percentage-input" id="wits" min="0" max="100" placeholder="%" oninput="updateBar(this)" />%
+                    <div class="bar-container"><div class="bar-fill"></div></div>
+                </div>
+                <div class="attribute">
+                    Politics: <input type="number" class="percentage-input" id="resolve" min="0" max="100" placeholder="%" oninput="updateBar(this)" />%
+                    <div class="bar-container"><div class="bar-fill"></div></div>
+                </div>
+            </div>
+            
+            
+            </div> 
+            
+                 <div class="flex">
+         <div class="section">
+                <h3>Physical Skills</h3>
+                <div class="attribute">
+                    Ranged: <input type="number" class="percentage-input" id="intelligence" min="0" max="100" placeholder="%" oninput="updateBar(this)" />%
+                    <div class="bar-container"><div class="bar-fill"></div></div>
+                </div>
+                <div class="attribute">
+                    Hand: <input type="number" class="percentage-input" id="wits" min="0" max="100" placeholder="%" oninput="updateBar(this)" />%
+                    <div class="bar-container"><div class="bar-fill"></div></div>
+                </div>
+                <div class="attribute">
+                    Athletics: <input type="number" class="percentage-input" id="resolve" min="0" max="100" placeholder="%" oninput="updateBar(this)" />%
+                    <div class="bar-container"><div class="bar-fill"></div></div>
+                </div>
+                <div class="attribute">
+                    Ride: <input type="number" class="percentage-input" id="intelligence" min="0" max="100" placeholder="%" oninput="updateBar(this)" />%
+                    <div class="bar-container"><div class="bar-fill"></div></div>
+                </div>
+                <div class="attribute">
+                    Survival: <input type="number" class="percentage-input" id="wits" min="0" max="100" placeholder="%" oninput="updateBar(this)" />%
+                    <div class="bar-container"><div class="bar-fill"></div></div>
+                </div>
+                <div class="attribute">
+                    Stealth: <input type="number" class="percentage-input" id="resolve" min="0" max="100" placeholder="%" oninput="updateBar(this)" />%
+                    <div class="bar-container"><div class="bar-fill"></div></div>
+                </div>
+                <div class="attribute">
+                    Stealing: <input type="number" class="percentage-input" id="wits" min="0" max="100" placeholder="%" oninput="updateBar(this)" />%
+                    <div class="bar-container"><div class="bar-fill"></div></div>
+                </div>
+                <div class="attribute">
+                    Weapons: <input type="number" class="percentage-input" id="resolve" min="0" max="100" placeholder="%" oninput="updateBar(this)" />%
+                    <div class="bar-container"><div class="bar-fill"></div></div>
+                </div>
+            </div>
+    
+         
+            <div class="section">
+                <h3>Social Skills</h3>
+                <div class="attribute">
+                    Animals: <input type="number" class="percentage-input" id="strength" min="0" max="100" placeholder="%" oninput="updateBar(this)" />%
+                    <div class="bar-container"><div class="bar-fill"></div></div>
+                </div>
+                <div class="attribute">
+                    Empathy: <input type="number" class="percentage-input" id="dexterity" min="0" max="100" placeholder="%" oninput="updateBar(this)" />%
+                    <div class="bar-container"><div class="bar-fill"></div></div>
+                </div>
+                <div class="attribute">
+                    Expression: <input type="number" class="percentage-input" id="stamina" min="0" max="100" placeholder="%" oninput="updateBar(this)" />%
+                    <div class="bar-container"><div class="bar-fill"></div></div>
+                </div>
+                <div class="attribute">
+                    Intimidation: <input type="number" class="percentage-input" id="stamina" min="0" max="100" placeholder="%" oninput="updateBar(this)" />%
+                    <div class="bar-container"><div class="bar-fill"></div></div>
+                </div>
+                <div class="attribute">
+                    Persuasion: <input type="number" class="percentage-input" id="stamina" min="0" max="100" placeholder="%" oninput="updateBar(this)" />%
+                    <div class="bar-container"><div class="bar-fill"></div></div>
+                </div>
+                <div class="attribute">
+                    Carousing: <input type="number" class="percentage-input" id="stamina" min="0" max="100" placeholder="%" oninput="updateBar(this)" />%
+                    <div class="bar-container"><div class="bar-fill"></div></div>
+                </div>
+                <div class="attribute">
+                    Street: <input type="number" class="percentage-input" id="stamina" min="0" max="100" placeholder="%" oninput="updateBar(this)" />%
+                    <div class="bar-container"><div class="bar-fill"></div></div>
+                </div>
+                <div class="attribute">
+                    Subterfuge: <input type="number" class="percentage-input" id="stamina" min="0" max="100" placeholder="%" oninput="updateBar(this)" />%
+                    <div class="bar-container"><div class="bar-fill"></div></div>
+                </div>
+            </div>
+            
+            
+            </div> 
+            
+            
+         </div>
+        
+        
+        
+             <div class="tab-content" id="Character3">
+        
+         <div class="content">
+            
+            <div class="photo">Character Photo</div>
+    
+     
+            <div class="details">
+                <div class="info">
+                  wip
+                </div>
+            </div>
+        </div></div>
+        
+        
+    </div></div>
+
+    <script src="script.js"></script>
